@@ -1,0 +1,61 @@
+/* target body to change font family and increase font size */
+body {
+    background-color: rgb(199, 163, 188);
+    color:rgb(46, 49, 49);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 2em;
+}
+
+/* select multiple elements (header and footer) and change background color */
+header, footer {
+    background-color: rgb(72, 53, 83);
+    color: #e1c2e4;
+    padding: 2em;
+}
+
+/* add a class of site-title to the main heading of the site and select the class in CSS to change the colour  */
+.site-title {
+    color: rgb(200, 169, 226);
+}
+
+/* add an id to image and select the id in CSS to add a box-shadow  */
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+/* nth-child selector - add a background to the odd list items  */
+.hobbies > li:nth-child(odd){
+    background-color: rgb(123, 106, 156);
+}
+
+/* replace bullet points for hobbies section */
+.hobbies {
+    list-style-type: square;
+} 
+
+/* Styling the Navigation */
+.nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    background-color: rgb(212, 128, 226);
+    border: 2px solid black;
+    color: rgb(47, 19, 92);
+    padding: 5px 50px 5px 50px; 
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgb(107, 19, 100);
+    border-color: black;
+    border-style:groove;
+    color: rgb(221, 160, 218);
+    text-decoration: none;
+}
+
+.list-item {
+    padding: 10px 0 10px 0;
+}
