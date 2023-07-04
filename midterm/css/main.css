@@ -118,6 +118,7 @@ input[type=submit] {
     margin: 15px 0 4px 0;
     border: 1px solid black;
     cursor: pointer;
+    text-transform: uppercase;
   }
 
 .form {
