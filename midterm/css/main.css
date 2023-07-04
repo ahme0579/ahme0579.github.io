@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(244, 207, 233);
+    line-height: 1.4;
+    margin: 0;
+}
+
+.wrapper {
+    background-color: rgb(172, 133, 204);
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.pageheader {
+    position:relative
+}
+
+.mainheading {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    font-size: 4rem;
+}
+
+#raccoonheader {
+    width: 100%;
+}
+
+.nav li {
+    display: inline-block;
+    width: 32%;
+    
+    border-right: 2px solid black;
+  }
+
+.nav li:nth-child(3) {
+    border: none;
+}
+
+.nav li a {
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bolder;
+    color:rgb(61, 50, 71)
+}
+
+.nav ul {
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+#lonely-raccoon {
+    width: 250px;
+    float: left;
+    padding: 10px;
+}
+.heading1 {
+    padding: 20px 0 0 10px;
+}
+h2 {
+    padding: 0 0 0 10px;
+    margin: 0;
+    font-size: 1.7rem;
+}
+
+.paragraph1 {
+    padding: 0 20px 0px 10px;
+    max-width: 100%;
+    text-align: justify;
+    margin-top: 0;
+    
+}
+
+.clear-fix::after {
+    content: "";
+    display:block;
+    clear: both;
+}
+
+.facts {
+    margin: 10px 10px 0 10px;
+    padding: 0 0 20px 20px;
+}
+
+.form-style-1 {
+	margin:10px auto;
+	display: block;
+	padding: 20px 12px 10px 20px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: none;
+}
+
+input[type=submit] {
+    background-color: rgb(172, 133, 204);
+    padding: 10px 15px;
+    margin: 15px 0 4px 0;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+
+.form {
+    border: solid 2px black;
+    padding: 20px;
+    margin: 10px;;
+}
+
+h3 {
+    font-size: 0.95rem;
+}
+
+footer {
+    text-align: right;
+    padding: 2px;
+    margin: 0 15px 15px 0;
+}
