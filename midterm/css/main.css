@@ -11,7 +11,7 @@ body {
 
 .wrapper {
     background-color: rgb(172, 133, 204);
-    max-width: 80%;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 .nav li a {
-    padding: 20px;
+    padding: 20px 60px ;
     border-radius: 5px;
     display: inline-block;
     text-decoration: none;
