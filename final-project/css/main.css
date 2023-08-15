@@ -58,6 +58,11 @@ body {
     background-color: #222;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.4;
+    
+    margin: 0 auto;
+}
+/* introduce container to allow for some content to stay within 1200px */
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -174,7 +179,7 @@ form.searchbar button:hover {
 }
 
 .content p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-bottom: 3rem;
 }
 
@@ -192,7 +197,6 @@ form.searchbar button:hover {
 
 /* styling for about us section */
 #about-us{
-    padding-bottom: 2rem;
     background-color: #ffe6ac;
 }
 
@@ -202,8 +206,8 @@ form.searchbar button:hover {
 }
 
 #about-us p{
-    padding: 0 1rem;
-    font-size: 1rem;
+    padding: 0 1rem 1rem 1rem;
+    font-size: 1.2rem;
 }
 #about-us h2{
     padding:0 1rem;
@@ -435,14 +439,14 @@ footer a:visited{
 @media screen and (min-width: 760px) {
     /* use of display flex to style the nav bar */
     .wrapper {
-        padding: 1rem 5rem;
+        padding: 2rem 5rem;
         width: 100%;
         display: flex;
         align-items: center;
         background-color: #222;
         margin: 0;
-        
     }
+    
     header nav ul{
         display: flex;
         justify-content: space-around;
@@ -480,26 +484,32 @@ footer a:visited{
         
     }
 
-    /* styling for about-us using float left property */
-    #about-us {
-        padding: 0 5rem;
-        padding-bottom: 2rem;
+    /* styling for about-us using grid */
+    #about-us{
+        padding: 0 4rem;
     }
+    .about-grid {
+        display: grid;
+        grid-template-columns: 0.6fr 1fr;
+      }
+
+    .about-pic {
+        display: flex;
+        align-items: center;
+        align-self: start;
+      }
+
+    .about-text {
+        align-self: center;
+    }
+
     #about-us img{
-        width: 50%;
-        float:left
-    }
-    #about-us p{
-        padding:0.5rem;
-        font-size: 1rem;
-    }
-    #about-us h2{
-        padding: 0 1rem;
-        padding-top: 1.5rem;
+        width: 100%;
+        align-items: end;
     }
     /* styling for services grid */
     #services {
-        padding: 0 5rem;
+
         background-color: white;
     }
     .services-grid {
@@ -545,10 +555,6 @@ footer a:visited{
 
     /* styling for vision section is omitted as it follows the same style */
     /* styling team section using grid */
-    #team {
-        padding: 0 5rem;
-    }
-
     .team-grid{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -566,13 +572,10 @@ footer a:visited{
 
     .team-text{
         margin-bottom: 0;
+        padding: 0.6rem;
     }
 
     /* styling contact section using grid template areas*/
-    #contact {
-        padding:0 5rem
-    }
-
     #contact h2{
         padding: 2rem 1rem 1rem 1rem;
     }
