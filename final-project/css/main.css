@@ -1,0 +1,611 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -------------CSS RESET CODE ABOVE-------------- */
+
+/* sets entire document to border box */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* header image with top banner */
+.wrapper {
+    margin: 1rem 1rem 0 1rem;
+    margin-top: 1rem;
+    background-color: #c78c06;
+  }
+/* introduces font sizes and styling for headers in the content */
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    place-self: center;
+    padding: 0.8rem 0rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#services h2,
+#contact h2{
+    padding: 1rem 0;
+}
+
+/* nav bar styling */
+header nav {
+    width: 100%;
+    text-align: center;
+    background-color: #222;
+ }
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ }
+ 
+header nav ul li {
+    display: block;
+    font-size: 1.2rem;
+ }
+
+header a {
+    display: block;
+    color: #c78c06;
+    text-align: center;
+    padding: 1.5rem 3.5rem;
+    text-decoration: none;
+ }
+
+header a:hover,
+header a:focus  {
+    background-color: #c78c06;
+    color: #222;
+ }
+/* styling for search bar and button */
+/* using 90% and 10% allocated space between the 2 objects are given */
+form.searchbar input[type=text] {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid grey;
+    float: left;
+    width: 90%;
+    
+}
+
+form.searchbar button {
+    width: 10%;
+    padding: 7px;
+    background-color: #222;
+    color: #c78c06;
+    border: 1px solid #c78c06;
+}
+
+form.searchbar button:hover {
+    color: #222;
+    background-color: #c78c06;
+  }
+
+/* styling for hero banner */
+/* use of css background-image property to create hero banner */
+.hero{
+    background-image: url(../images/main-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 0;
+    margin-top: 1rem;
+   }
+
+.content {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    padding: 5rem 1rem 3rem 1rem;
+}
+
+.content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    place-self: center;
+    padding: 0.8rem 0rem;
+    
+    
+}
+
+.content p{
+    font-size: 1.2rem;
+    padding-bottom: 3rem;
+}
+
+.content a {
+	background-color: #c78c06;
+    font-size: 1.5rem;
+}
+
+.content a:link,
+.content a:visited {
+    text-decoration: none;
+    color:black;
+    padding: 2rem;
+}
+
+/* styling for about us section */
+#about-us{
+    padding-bottom: 2rem;
+    background-color: #ffe6ac;
+}
+
+#about-us img{
+    width: 100%;
+    padding:1rem 1rem;
+}
+
+#about-us p{
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+#about-us h2{
+    padding:0 1rem;
+}
+
+/* styling for services section using grid for desktop layout*/
+#services h2 {
+    background-color: white;
+    padding-left: 1rem;
+    padding-bottom: 0;
+}
+.services-grid {
+    background-color: white;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+.services-grid img {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.services-grid p{
+    margin: 1rem;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.services-grid h3{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0 0 1rem;
+}
+
+.services-grid article {
+    background-color: #ffe6ac;
+    padding: 0 0 2.5rem 0 ;
+
+}
+
+.services-grid a:link,
+.services-grid a:visited {
+  padding: 1.4rem 0.5rem;
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid black;
+  margin: 1rem 1rem;
+  
+}
+
+/* styling for vision section using css background-image porperty */
+.vision{
+    background-image: url(../images/vision.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 3rem 0 3rem 0;
+}
+
+.vision-content {
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.vision h3 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+.vision p {
+    color: white;
+    padding-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+.vision a:link,
+.vision a:visited {
+  padding: 2rem 3rem;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #c78c06;
+}
+/* styling for team section using grid for desktop layout */
+#team {
+    background-color: white;
+    width:100%
+  }
+
+.team-img{
+    width: 100%;
+    display: block;
+  }
+.team-grid {
+    display:grid;
+    gap:0;
+    padding: 1rem;
+}
+.team-text {
+    background-color: #ffe6ac;
+    padding: 1rem;
+    margin-bottom:1rem;
+}
+
+.team-text p{
+    margin: 1rem 0 0 1rem;
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.team-text h3{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 1rem;
+}
+
+#team-grid article {
+    background-color: #ffe6ac;
+    padding: 0 0 1rem 0 ;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+#team h2{
+    padding:1rem 0 0 1rem;
+}
+#team hr {
+    width: 95%;
+    border: 1.4px solid #c78c06;
+  }
+
+/* use of class bold for the text that appears bold below h3 */
+.bold {
+    font-weight: bold;
+}
+
+/* styling for contact section */
+#contact{
+    background-color: white;
+    padding: 1rem;
+}
+
+.form, 
+.hours,
+.location{
+    padding: 1rem 0
+}
+
+.form input[type=text] {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.5rem 20px;
+    margin: 0.5rem 0;
+    display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 0.3rem;
+  }
+
+textarea {
+    width: 100%;
+    padding: 3rem 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    resize: none;
+    border-radius: 0.3rem;
+}
+
+.form label{
+    font-size: 1.2rem;
+}
+
+#contact h3{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+input[type=submit] {
+    background-color: rgb(0, 0, 0);
+    padding: 0.3rem 0.5rem;
+    color: #c78c06;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+/* table styled seperately */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td,
+table th{
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+table th {
+    background-color: #ffe6ac;
+}
+
+iframe {
+    width: 100%;
+}
+/* styling of the footer */
+footer {
+    width: 100%;
+    background-color: #222;
+    color: #c78c06;
+    padding: 2rem 0 1rem 1rem;
+    font-size: 1.2rem;
+    line-height:3rem;
+}
+
+footer a:visited{
+    color: #c78c06;
+}
+
+/* end of mobile css, starting media query for desktop layout */
+@media screen and (min-width: 760px) {
+    /* use of display flex to style the nav bar */
+    .wrapper {
+        padding: 1rem 5rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #222;
+        margin: 0;
+        
+    }
+    header nav ul{
+        display: flex;
+        justify-content: space-around;
+        padding: 0 0 0 2rem;
+        
+    }
+
+    header a {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+
+    }
+    
+    form.searchbar input[type=text]{
+        display: flex;
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    form.searchbar button {
+        width: 20%;
+        padding: 5px;
+        background-color: #222;
+        color: #c78c06;
+        border: 1px solid #c78c06;
+    }
+
+    /* appropriate styling for the hero banner */
+    .hero{
+        margin-top: 0;
+       }
+    .content {
+        width: 85%;
+        padding: 5rem 8rem 3rem 1rem;
+        
+    }
+
+    /* styling for about-us using float left property */
+    #about-us {
+        padding: 0 5rem;
+        padding-bottom: 2rem;
+    }
+    #about-us img{
+        width: 50%;
+        float:left
+    }
+    #about-us p{
+        padding:0.5rem;
+        font-size: 1rem;
+    }
+    #about-us h2{
+        padding: 0 1rem;
+        padding-top: 1.5rem;
+    }
+    /* styling for services grid */
+    #services {
+        padding: 0 5rem;
+        background-color: white;
+    }
+    .services-grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .services-grid article:nth-child(1){
+        display: grid;
+        grid-column:1/4;
+    }
+    
+    .services-grid article:nth-child(2){
+        display: grid;
+        grid-column:4/7 ;
+    }
+
+    .services-grid article:nth-child(3){
+        display: grid;
+        grid-column:1/3;
+    }
+
+    .services-grid article:nth-child(4){
+        display: grid;
+        grid-column:3/5;
+    }
+    .services-grid article:nth-child(5){
+        display: grid;
+        grid-column:5/-1;
+    }
+
+    .services-grid a:link,
+    .services-grid a:visited {
+        display: block;
+        text-align: center;
+    }
+    
+    .services-grid article {
+        padding: 0 ;
+    }
+
+    /* styling for vision section is omitted as it follows the same style */
+    /* styling team section using grid */
+    #team {
+        padding: 0 5rem;
+    }
+
+    .team-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap:0;
+    }
+
+    .team-grid div:nth-child(4){
+        grid-column: 1/2;
+        grid-row:2/3;
+    }
+
+    .team-grid div:nth-child(3){
+        grid-column: 2/3;
+    }
+
+    .team-text{
+        margin-bottom: 0;
+    }
+
+    /* styling contact section using grid template areas*/
+    #contact {
+        padding:0 5rem
+    }
+
+    #contact h2{
+        padding: 2rem 1rem 1rem 1rem;
+    }
+    .contact-grid {
+        display: grid;
+        padding: 1rem;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr auto;
+        gap: 1rem;
+        grid-template-areas:
+        "one two"
+        "three three"
+    }
+
+    .form {
+        grid-area: one;
+    }
+    .location {
+        grid-area: two;
+    }
+    .hours {
+        grid-area: three;
+    }
+
+    footer {
+        padding-left: 6rem;
+    }
+}
+
+/* css reset code inserted */
+/* mobile-first approach */
+/* maximum width of the container is 1200px */
+/* css grid used: 3 times */
+/* css flex used: 1 time */
+/* css code validated */
+/* html code revalidated */
